@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babushka</title>
+    <link rel="stylesheet" href="babushka.css">
+
+</head>
+
+<body>
+
+    <div id="popup">
+        <div class="popup_content">
+            <button id="popupLuk">Luk</button>
+            <h2 class="info" data-navn></h2>
+
+            <div class="single_info">
+                <img src="" alt="" class="info" data-billede>
+                <details open>
+                    <summary>Beskrivelse</summary>
+                    <p class="info" data-langbeskrivelse></p>
+                </details>
+
+                <p>Pris: <span class="info" data-pris>,-</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <header>
+
+        <nav>
+
+            <button id="filter-alle">Alle</button>
+            <button id="filter-forretter">Forretter</button>
+            <button id="filter-hovedretter">Hovedretter</button>
+            <button id="filter-desserter">Desserter</button>
+            <button id="filter-drikkevarer">Drikkevarer</button>
+            <button id="filter-sideorders">Sideorders</button>
+
+        </nav>
+
+        <select class="sortering">
+                <option value="alfa">Alfabetisk</option>
+                <option value="prisop">Pris: Lav - Høj</option>
+                <option value="prisned">Pris: Høj - Lav</option>
+            </select>
+
+    </header>
+
+    <main>
+        <h1 id="overskrift" data-overskrift>Menu</h1>
+        <section id="menu-container" data-container class="liste"></section>
+    </main>
+
+
+    <footer></footer>
+
+
+    <template data-template>
+           <article class="ret">
+
+                <h2 class="info" data-navn></h2>
+                <img src="" alt="" class="info" data-billede>
+                <p class="info" data-kortbeskrivelse></p>
+               <p>Pris: <span class="info" data-pris >,-</span></p>
+
+            </article>
+        </template>
+
+    <script src="babushka.js"></script>
+</body>
+
+</html>
